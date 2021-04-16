@@ -572,6 +572,34 @@ footer a {
 	color: var(--secondary-color-2);
 }
 
+/* ==========================================================================
+Mobile Tablet Inform
+========================================================================== */
+.small-inform {
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 150px 20px;
+	text-align: center;
+	display: none;
+}
+.small-inform .inform-img {
+	width: 50%;
+	margin-bottom: 50px;
+}
+
+.small-inform p:first-child {
+	margin-top: 50px;
+}
+
+.small-inform p a {
+	text-decoration: none;
+	color: var(--secondary-color-2);
+	font-size: 18px;
+	margin-top: 20px;
+	display: inline-block;
+}
+
 
 /* ==========================================================================
 Desktop Responsive
@@ -615,5 +643,15 @@ Desktop Responsive
 	#projects .box-img {
 		width: 260px;
 		height: 190px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	#wrapper {
+		display: none;
+	}
+
+	.small-inform {
+		display: flex;
 	}
 }
