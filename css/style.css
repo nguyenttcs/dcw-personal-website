@@ -1,0 +1,619 @@
+/* ==========================================================================
+Global CSS
+========================================================================== */
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-color: #3c3b5a;
+	--secondary-color-1: #32324c;
+	--secondary-color-2: #f39f1b;
+	--text-color: #c5c5c5;
+	--text-color-2: #fefefe;
+}
+
+html,
+body {
+	font-family: 'Lato', sans-serif;
+	background-color: var(--primary-color);
+	color: var(--text-color);
+	font-weight: 200;
+}
+
+/* ==========================================================================
+Common CSS
+========================================================================== */
+ul {
+	list-style: none;
+}
+
+.btn-common {
+	padding: 10px 18px;
+	margin: 10px 0;
+	border-radius: 5px;
+	background-color: var(--secondary-color-2);
+	color: var(--text-color-2);
+	border: none;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.btn-custom {
+	background-color: var(--text-color-2);
+	color: var(--secondary-color-2);
+}
+
+.btn-common:focus {
+	outline: none;
+}
+
+.pd-y {
+	padding-left: 18% !important;
+	padding-right: 18% !important;
+}
+
+.title {
+	font-size: 32px;
+	color: var(--secondary-color-2);
+	font-weight: 400;
+	padding: 20px 0;
+}
+
+.clear-both {
+	clear: both;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+#wrapper {
+	/* max-width: 1200px; */
+	/* padding: 50px 50px; */
+	/* margin: 0 auto; */
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 50px;
+}
+
+/* ==========================================================================
+Header
+========================================================================== */
+
+header .menu ul {
+	display: flex;
+}
+
+header .menu ul li {
+	padding: 0 15px;
+}
+
+header .menu ul li:hover a {
+	color: var(--secondary-color-2);
+	transition: 0.5s;
+}
+
+header .menu ul li a {
+	color: var(--text-color);
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+/* ==========================================================================
+Banner
+========================================================================== */
+.banner {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.banner .left .heading {
+	font-size: 32px;
+	color: var(--text-color-2);
+	font-weight: normal;
+}
+
+.banner .sub-heading {
+	font-size: 18px;
+	margin: 15px 0;
+	font-weight: 200;
+}
+
+.banner .content {
+	font-size: 14px;
+	line-height: 1.21;
+	font-weight: 200;
+}
+
+.banner .btn-common {
+	margin: 30px 0;
+}
+
+/* ==========================================================================
+Am I
+========================================================================== */
+.am-i {
+	padding: 100px 0;
+	background-color: var(--secondary-color-1);
+}
+
+.am-i .title {
+	text-align: right;
+}
+
+.am-i p {
+	text-align: center;
+}
+
+.am-i .list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.am-i .list .item {
+	width: 30%;
+	padding: 30px;
+	border-radius: 5px;
+	-webkit-backdrop-filter: blur(30px);
+	backdrop-filter: blur(30px);
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+	background-color: var(--primary-color);
+	text-align: center;
+}
+
+.am-i .list .item:nth-child(2) {
+	padding: 50px 30px;
+}
+
+.am-i .list .item .item-title {
+	font-weight: normal;
+	padding: 10px 0;
+	color: var(--secondary-color-2);
+}
+
+/* ==========================================================================
+Projects
+========================================================================== */
+
+#projects {
+	padding: 50px 0;
+}
+
+#projects .top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#projects .box {
+	position: relative;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+#projects .box:hover .des {
+	opacity: 0.8;
+	transition: 0.5s;
+}
+
+#projects .box-img {
+	width: 290px;
+	height: 210px;
+	overflow: hidden;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#projects .box .des {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	background: var(--secondary-color-2);
+	opacity: 0;
+	color: var(--text-color-2);
+	text-align: center;
+}
+
+#projects .box .des .content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#projects .box .des .content p {
+	padding: 10px 0;
+}
+
+#projects .top .left .title {
+	padding: 5px 0;
+}
+
+#projects .center {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0;
+}
+
+#projects .bottom .box {
+	float: left;
+}
+
+/* ==========================================================================
+Gallery
+========================================================================== */
+
+#gallery {
+	background-color: var(--secondary-color-1);
+	padding: 100px 0;
+}
+
+#gallery .title,
+#gallery p {
+	text-align: right;
+}
+
+#gallery .title {
+	padding: 5px 0;
+}
+
+#gallery .content {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+
+#gallery .content .design-box {
+	width: 49%;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+#gallery .content .design-box img {
+	border-radius: 5px;
+}
+
+/* ==========================================================================
+Education & Experience
+========================================================================== */
+
+.info {
+	padding: 100px 0;
+}
+
+.info-title {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.info .info-ed {
+	width: 48%;
+	text-align: right;
+}
+
+.info .main-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.education,
+.experience {
+	display: flex;
+	justify-content: space-between;
+}
+
+.timeline {
+	border-right: 1px solid var(--text-color-2);
+	width: 80%;
+	padding-right: 30px;
+}
+
+.timeline .type {
+	color: var(--secondary-color-2);
+}
+
+.timeline .major {
+	padding: 5px 0;
+}
+
+.timeline .school {
+	color: #05a5d8;
+}
+
+.timeline .desc {
+	padding: 10px 0 30px 0;
+}
+
+.education .right,
+.experience .right {
+	display: flex;
+	position: relative;
+	color: var(--secondary-color-2);
+}
+
+.info-ex {
+	width: 48%;
+	text-align: left;
+}
+
+.info-ex .timeline {
+	border: none;
+	padding: 0;
+	border-left: 1px solid var(--text-color-2);
+	width: 80%;
+	padding-left: 30px;
+}
+
+.experience {
+	flex-direction: row-reverse;
+}
+
+/* ==========================================================================
+Tools
+========================================================================== */
+
+.tools {
+	padding: 100px 0;
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--secondary-color-1);
+}
+
+.tools .tools-title .title {
+	padding: 5px 0;
+}
+
+.tools .tools-title p span {
+	color: var(--secondary-color-2)
+}
+
+.tools .tools-list {
+	width: 50%;
+}
+
+/* ==========================================================================
+Awards & Activities
+========================================================================== */
+.awards {
+	padding: 100px 0 400px 0;
+	position: relative;
+}
+
+.awards .title {
+	text-align: right;
+}
+
+.awards .left {
+	width: 40%;
+}
+
+.awards .main-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.awards .right {
+	width: 40%;
+	margin-top: 20px;
+}
+
+.awards .right .fa-quote-left,
+.awards .right .fa-quote-right {
+	color: var(--secondary-color-2);
+	font-size: 28px;
+}
+
+.awards .right .fa-quote-right {
+	display: inline-block;
+	float: right;
+}
+
+.awards .right p {
+	padding: 0 0 0 50px;
+}
+
+.awards .right .slider {
+	display: flex;
+	justify-content: center;
+}
+
+.awards .right .slider .icon {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 1px solid var(--secondary-color-2);
+	margin: 0 10px;
+	cursor: pointer;
+	position: relative;
+}
+
+.awards .right .slider .icon.active .choosed {
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background-color: var(--secondary-color-2);
+	transform: translate(-50%, -50%);
+}
+
+/* ==========================================================================
+Contact
+========================================================================== */
+
+#contact {
+	position: absolute;
+	padding: 50px 70px;
+	left: 50%;
+	bottom: -20%;
+	transform: translate(-50%, 0);
+	border-radius: 5px;
+	box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.16);
+	background-color: var(--primary-color);
+	min-width: 900px;
+}
+
+#contact .title {
+	text-align: left;
+}
+
+#contact .content {
+	display: flex;
+	justify-content: space-between;
+}
+
+#contact .content .contact-left {
+	width: 80%;
+}
+
+#contact .content .contact-right {
+	text-align: right;
+}
+
+#contact .content .contact-right input,
+#contact .content .contact-right textarea {
+	background: transparent;
+	min-width: 350px;
+	padding: 20px;
+	border-radius: 3px;
+	box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.16);
+	background-color: #3c3b5a;
+	border: none;
+	margin-bottom: 10px;
+	color: var(--text-color-2)
+}
+
+#contact .content .contact-right input:focus,
+#contact .content .contact-right textarea:focus {
+	outline: none;
+}
+
+
+/* ==========================================================================
+Stay Connect
+========================================================================== */
+.connect {
+	padding: 220px 0 100px 0;
+	background-color: var(--secondary-color-1);
+}
+
+.connect .title {
+	text-align: center;
+}
+
+.connect .connect-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.connect .connect-info .left {
+	width: 50%;
+	text-align: center;
+}
+
+.connect .connect-info .left a {
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+.connect .connect-info .left .email {
+	font-size: 18px;
+	padding: 10px 0;
+	display: inline-block;
+}
+
+.connect .connect-info .left .fa-behance {
+	margin-top: 30px;
+	margin-right: 20px;
+}
+
+.connect .connect-info .left .fa-behance,
+.connect .connect-info .left .fa-github-alt {
+	font-size: 28px;
+	color: var(--secondary-color-2);
+}
+
+
+.connect .connect-info .right {
+	width: 50%;
+}
+
+/* ==========================================================================
+Footer
+========================================================================== */
+footer {
+	text-align: center;
+	padding: 20px;
+	font-style: italic;
+}
+
+footer a {
+	text-decoration: none;
+	color: var(--secondary-color-2);
+}
+
+
+/* ==========================================================================
+Desktop Responsive
+========================================================================== */
+
+@media screen and (min-width: 1920px) {
+	.pd-y {
+		padding-left: 23% !important;
+		padding-right: 23% !important;
+	}
+
+	.am-i .list .item {
+		padding: 50px;
+	}
+
+	.am-i .list .item:nth-child(2) {
+		padding: 70px 50px;
+	}
+
+	#projects .box-img {
+		width: 329px;
+		height: 249px;
+	}
+}
+
+@media screen and (min-width: 2200px) {
+	.pd-y {
+		padding-left: 30% !important;
+		padding-right: 30% !important;
+	}
+}
+
+@media screen and (max-width: 1366px) {
+	#projects .box-img {
+		width: 280px;
+		height: 200px;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	#projects .box-img {
+		width: 260px;
+		height: 190px;
+	}
+}
