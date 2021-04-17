@@ -24,8 +24,8 @@ body {
 	font-weight: 200;
 }
 
-::-webkit-input-placeholder { /* Edge */
-  font-family: 'Lato', sans-serif;
+::-webkit-input-placeholder {
+	font-family: 'Lato', sans-serif;
 	font-weight: 200;
 }
 
@@ -34,6 +34,10 @@ Common CSS
 ========================================================================== */
 ul {
 	list-style: none;
+}
+
+a {
+	text-decoration: none;
 }
 
 .btn-common {
@@ -588,6 +592,7 @@ Mobile Tablet Inform
 	text-align: center;
 	display: none;
 }
+
 .small-inform .inform-img {
 	width: 50%;
 	margin-bottom: 50px;
